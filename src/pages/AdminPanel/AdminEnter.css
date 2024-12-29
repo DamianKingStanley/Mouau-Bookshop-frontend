@@ -1,0 +1,13 @@
+.AdminEnterSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 980px) {
+    .AdminEnterSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}

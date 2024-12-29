@@ -1,0 +1,102 @@
+/* General Styles */
+
+.order-list-container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+.order-list-container h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.order-list-container .order-group {
+    margin-bottom: 40px;
+}
+
+.order-list-container .order-date {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.order-list-container .order-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.order-list-container .order-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-list-container .order-id {
+    font-weight: bold;
+}
+
+.order-list-container .order-items {
+    margin: 10px 0;
+}
+
+.order-list-container .order-items ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.order-list-container .order-items li {
+    margin-bottom: 5px;
+}
+
+.order-list-container .order-amount,
+.order-list-container .order-status {
+    margin: 10px 0;
+}
+
+.order-list-container .order-actions button {
+    margin: 5px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-list-container .order-actions button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+    .order-list-container {
+        padding: 10px;
+    }
+    .order-list-container .order-grid {
+        grid-template-columns: 1fr;
+        /* Single column layout for small screens */
+    }
+    .order-list-container .order-card {
+        padding: 10px;
+    }
+    .order-list-container .order-actions button {
+        padding: 6px 10px;
+        font-size: 12px;
+        width: auto;
+        /* Adjust width for smaller screens */
+    }
+}
